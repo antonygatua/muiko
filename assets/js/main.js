@@ -1,17 +1,64 @@
-const preloader = document.querySelector('.preloader');
-const loader = document.querySelector('.loader');
-const main = document.querySelector('.main');
+/* Typing animation */
+var typed = new Typed(".typing", {
+  strings:["", "Data Scientist", "", "Data Analyst", ""],
+  typeSpeed: 80,
+  backSpeed: 40,
+  loop:true
+})
 
-function init() {
-  setTimeout(() => {
-    loader.style.opacity = 0;
-    loader.style.display = 'none';
-    preloader.style.opacity = 0;
-    preloader.style.display = 'none';
+// Projects slider
+let slides = document.querySelectorAll(".project-slider");
+let index = 0;
 
-    main.style.display = 'block';
-    setTimeout(() => (main.style.opacity = 1), 50);
-  }, 4000);
+/* Next function */
+function next(){
+  slides[index].classList.remove('active');
+  index = (index + 1) % slides.length;
+  slides[index].classList.add('active');
 }
+/* prev function */
+function prev(){
+  slides[index].classList.remove('active');
+  index = (index - 1 + slides.length) % slides.length;
+  slides[index].classList.add('active');
+}
+/* auto play (slides change every 7sec) */
+setInterval(next, 7000);
 
-init();
+// Testimonial Slider
+let userText = document.querySelectorAll(".user-text");
+let userImg = document.querySelectorAll(".usr-img");
+let i = 0;
+
+/* ShowReview function */
+function showReview(){
+  userText[i].classList.remove('active');
+  userImg[i].classList.remove('active');
+  i = (i + 1) % userText.length;
+  userText[i].classList.add('active');
+  userImg[i].classList.add('active');
+}
+/* Autoplay, changes every 7sec */
+setInterval(showReview, 7000)
+
+// listen to the form submission
+document
+.getElementById("contact-form")
+.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const serviceID = "service_t5qipk6";
+  const templateID = "template_whqrasw";
+
+  // send the email here
+  emailjs.sendForm(serviceID, templateID, this).then(
+    (response) => {
+      console.log("SUCCESS!", response.status, response.text);
+      alert("SUCCESS!");
+    },
+    (error) => {
+      console.log("FAILED...", error);
+      alert("FAILED...", error);
+    }
+  );
+});

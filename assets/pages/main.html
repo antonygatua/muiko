@@ -16,6 +16,13 @@
         <link rel="stylesheet" href="../css/color/color-3.css" class="alternate-style" title="color-3" disabled/>
         <link rel="stylesheet" href="../css/color/color-4.css" class="alternate-style" title="color-4" disabled/>
         <link rel="stylesheet" href="../css/color/color-5.css" class="alternate-style" title="color-5" disabled/>
+        <!--Email JS-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("ohd5WTCS-KjyKPkIA");
+            })();
+        </script>
     </head>
     <body>
         <!-- Start Main Container -->
@@ -45,7 +52,7 @@
             <!-- Main-content Start -->
             <div class="main-content">
                 <!-- Start Home Section -->
-                <section class="home section">
+                <section class="home section" id="home">
                     <div class="container">
                         <div class="row">
                             <div class="home-info padd-15">
@@ -66,13 +73,17 @@
                 </section>
                 <!-- End Home Section -->
                 <!-- Start About Section -->
-                <section class="about section">
+                <section class="about section" id="about">
                     <div class="container">
                         <div class="row">
                             <div class="work-img padd-15"></div>
                             <div class="work-info padd-15">
-                                <h3>Work</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolor amet! Suscipit tempore laboriosam ab rem quis provident, recusandae dolorem.</p>
+                                <div class="section-title padd-15">
+                                    <h2>Work</h2>
+                                </div>
+                                <div class="about-text padd-15">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, dolor amet! Suscipit tempore laboriosam ab rem quis provident, recusandae dolorem.</p>
+                                </div>
                                 <!-- First work Item -->
                                 <div class="work-inner-items">
                                     <div class="row">
@@ -176,8 +187,8 @@
                                 </div>
                             </div>
                             <!--Service Item Ends-->
-                              <!--Service Item Starts-->
-                              <div class="service-item padd-15">
+                            <!--Service Item Starts-->
+                            <div class="service-item padd-15">
                                 <div class="service-item-inner">
                                     <div class="icon">
                                         <i class="fa fa-code"></i>
@@ -188,8 +199,8 @@
                                 </div>
                             </div>
                             <!--Service Item Ends-->
-                              <!--Service Item Starts-->
-                              <div class="service-item padd-15">
+                            <!--Service Item Starts-->
+                            <div class="service-item padd-15">
                                 <div class="service-item-inner">
                                     <div class="icon">
                                         <i class="fa fa-code"></i>
@@ -229,14 +240,189 @@
                 </section>
                 <!-- End Services Section -->
                 <!-- Start Portfolio Section -->
+                <section class="portfolio section" id="portfolio">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Portfolio</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                             <!--Project Slider start-->
+                            <div class="project">
+                                <!--First Project Item Starts-->
+                                <div class="project-slider active">
+                                    <div class="project-items">
+                                        <div class="project-img">
+                                            <img src="../images/gray-dolphin-on-body-of-water-1986374.jpg" alt="project">
+                                        </div>
+                                        <div class="project-content padd-15">
+                                            <span class="project-date">26 December 2021</span>
+                                            <h3 class="project-name">Lorem ipsum dolor sit amet consectetur.</h3>
+                                            <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At excepturi, impedit voluptatibus unde eligendi voluptates alias mollitia repellendus in maxime et vel magnam dolorum sunt. Quisquam necessitatibus molestias blanditiis illum, ipsam atque vitae nihil animi laudantium voluptatem minima. Expedita, nisi!</p>
+                                            <a href="#" class="btn">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--First Project Item ends -->
+                                <!--Second Project Item Starts -->
+                                <div class="project-slider ">
+                                    <div class="project-items">
+                                        <div class="project-img">
+                                            <img src="../images/designs.jpg" alt="project">
+                                        </div>
+                                        <div class="project-content padd-15">
+                                            <span class="project-date">25 December 2019</span>
+                                            <h3 class="project-name">Lorem ipsum dolor sit amet consectetur.</h3>
+                                            <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. At excepturi, impedit voluptatibus unde eligendi voluptates alias mollitia repellendus in maxime et vel magnam dolorum sunt. Quisquam necessitatibus molestias blanditiis illum, ipsam atque vitae nihil animi laudantium voluptatem minima. Expedita, nisi!</p>
+                                            <a href="#" class="btn">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Second Project Item Ends -->
+                                <!-- Slider Buttons Start-->
+                                <div class="prev" onclick="prev()">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </div>
+                                <div class="next" onclick="next()">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                                <!-- slider Buttons End -->
+                            </div>
+                            <!--Project Slider Ends-->
+                        </div>                       
+                        <!--Floating Testimonial Button start-->
+                        <!--Floating Testimonial Button end-->
+                        <!--Testimonial Starts-->
+                        <div class="testimonials">
+                            <div class="row">
+                                <div class="testimonials-title padd-15">
+                                    <h3>testimonials</h3>
+                                </div>
+                            </div>
+                            <div class="row testimonial">
+                                <div class="testimonials-slider">
+                                    <div class="testimonial-text">
+                                        <!--First Testimonial Text Start-->
+                                        <div class="user-text active">
+                                            <i class="fa-solid fa-quote-left"></i>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et unde alias sunt voluptatibus deserunt vitae consectetur voluptatum, nesciunt tempore consequatur quos at eos nostrum ad dolorum. Aspernatur, sapiente doloremque excepturi maxime eos quae. Suscipit hic voluptate itaque rerum eaque quia saepe dignissimos, dolores architecto, fugit enim quos cum sapiente corporis?</p>
+                                            <span>Ruth Jomo, CEO JOAS</span>
+                                        </div>
+                                        <!--First Testimonial Text End-->
+                                        <!--Second Testimonial Text Start-->
+                                        <div class="user-text">
+                                            <i class="fa-solid fa-quote-left"></i>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et unde alias sunt voluptatibus deserunt vitae consectetur voluptatum, nesciunt tempore consequatur quos at eos nostrum ad dolorum. Aspernatur, sapiente doloremque excepturi maxime eos quae. Suscipit hic voluptate itaque rerum eaque quia saepe dignissimos, dolores architecto, fugit enim quos cum sapiente corporis?</p>
+                                            <span>Ruth Range, CEO ROAS</span>
+                                        </div>
+                                        <!--Second Testimonial Text End-->
+                                    </div>
+                                    <div class="testimonial-img">
+                                        <img src="../images/IMG-20190330-WA0001.jpg" alt="User" class="usr-img active" onclick="showReview()">
+                                        <img src="../images/pexels-lukas-669619.jpg" alt="User" class="usr-img" onclick="showReview()">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Testimonial End-->
+                    </div>
+                </section>
                 <!-- End Portfolio Section -->
                 <!-- Start Blogs section -->
+                <section class="blogs section" id="blogs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>Blogs</h2>
+                            </div>
+                        </div>
+                        <div class="row blogs-text padd-15">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio id minima, laborum dolore saepe similique exercitationem ex quisquam corporis sed asperiores temporibus sequi consequatur ducimus.</p>
+                        </div>
+                        <div class="row">
+                            <!--blog Item Starts-->
+                            <div class="blogs-item padd-15">
+                                <div class="blogs-item-inner">
+                                    <h4>Data Cleaning</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fuga eos quaerat aliquid voluptates cum!</p>
+                                    <a href="#" class="full-post">Full Post</a>
+                                    <p>October 14, 2020</p>
+                                </div>
+                            </div>
+                            <!--blogs Item Ends-->
+                            <!--blogs Item Starts-->
+                            <div class="blogs-item padd-15">
+                                <div class="blogs-item-inner">
+                                    <h4>Data Cleaning</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fuga eos quaerat aliquid voluptates cum!</p>
+                                    <a href="#" class="full-post">Full Post</a>
+                                    <p>October 14, 2020</p>
+                                </div>
+                            </div>
+                            <!--blogs Item Ends-->
+                            <!--blogs Item Starts-->
+                            <div class="blogs-item padd-15">
+                                <div class="blogs-item-inner">
+                                    <h4>Data Cleaning</h4>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas fuga nam maiores eos commodi ipsa?</p>
+                                    <a href="#" class="full-post">Full Post</a>
+                                    <p>October 14, 2020</p>
+                                </div>
+                            </div>
+                            <!--Blogs Item Ends-->
+                        </div>
+                    </div>
+                </section>
                 <!-- End Blogs sections -->
                 <!-- Start Contact Section -->
+                <section class="contact section" id = "contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="contact-content">
+                                <div class="section-title padd-15">
+                                    <h2>Get in Touch</h2>
+                                </div>
+                                <form id="contact-form">
+                                    <div class="input-container padd-15">
+                                        <input type="text" id="name" name = "name" required>
+                                        <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+                                    </div>
+                                    <div class="input-container padd-15">
+                                        <input type="email" id="email" name = "email" required>
+                                        <label for="email"><i class="fa-solid fa-envelope"></i> Email ID</label>
+                                        <small class="error"></small>
+                                    </div>
+                                    <div class="input-container padd-15">
+                                        <input type="tel" id="phone" name = "phone" required>
+                                        <label for="phone"><i class="fa-solid fa-phone"></i> Phone No.</label>
+                                        <small class="error"></small>
+                                    </div>
+                                    <div class="input-container padd-15">
+                                        <input type="text" id="subject" name = "subject" required>
+                                        <label for="subject"><i class="fa-solid fa-comment"></i> Subject</label>
+                                    </div>
+                                    <div class="input-container padd-15">
+                                        <textarea id="message" rows="8" name = "message" required></textarea>
+                                        <label for="message"><i class="fa-solid fa-comments"></i> Your Message</label>
+                                    </div>
+                                    <div class="input-container padd-15">
+                                        <button type="submit">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="contact-img">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <!-- End Contact Section -->
             </div>
             <!-- Main-content end -->
         </div>
         <!-- End Main Container -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="../js/main.js"></script>
     </body>
 </html>
