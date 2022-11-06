@@ -1,3 +1,17 @@
+// Hamburger menu
+const hamburger = document.querySelector(".nav-toggler");
+const main_menu = document.querySelector(".links");
+const menuItems = document.querySelectorAll(".menu-items");
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle("active-menu")
+  main_menu.classList.toggle("active-menu")
+})
+/* close hamburger menu on click */
+function closeMenu(){
+  hamburger.classList.remove("active-menu");
+  main_menu.classList.remove("active-menu");
+}
 /* Typing animation */
 var typed = new Typed(".typing", {
   strings:["", "Data Scientist", "", "Data Analyst", ""],
@@ -5,7 +19,34 @@ var typed = new Typed(".typing", {
   backSpeed: 40,
   loop:true
 })
+// work description
+const modalViews = document.querySelectorAll(".popup-outer"),
+      modalBtns = document.querySelectorAll(".open-btn"),
+      modalCloses = document.querySelectorAll(".popup-box-close"),
+      sectImg = document.querySelector('.work-img'),
+      sectInfo = document.querySelector('.work-info')
 
+let modal = function(modalClick) {
+  modalViews[modalClick].classList.add('show')
+  sectImg.classList.add('modalClass')
+  sectInfo.classList.add('modalClass')
+}
+
+modalBtns.forEach((modalBtn, i) => {
+  modalBtn.addEventListener('click', () => {
+    modal(i)
+  })
+})
+
+modalCloses.forEach((modalClose) => {
+  modalClose.addEventListener('click', () => {
+    modalViews.forEach((modalView) => {
+      modalView.classList.remove('show')
+    })
+    sectImg.classList.remove('modalClass')
+    sectInfo.classList.remove('modalClass')
+  })
+})
 // Projects slider
 let slides = document.querySelectorAll(".project-slider");
 let index = 0;
