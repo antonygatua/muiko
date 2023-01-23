@@ -5,10 +5,10 @@
 {
     --bg-black-900:#f2f2fc;
     --bg-black-100:#fdf9ff;
-    --bg-black-50:#e8dfec;
-    --text-black-900:#302e4d;
-    --text-black-700:#504e70;
-    --lg-border-color:red;
+    --bg-black-50:#e8dfec; 
+    --text-black-900:#000000;
+    --text-black-700:#161616;
+    --lg-border-color:rgb(255, 115, 0);
     --btn-color: white;
 }
 body
@@ -42,7 +42,7 @@ ul
     opacity: 1;
     left: 75px;
     top: 75px;
-    background: red; /* to remove */
+    background: rgb(79, 183, 228); /* to remove */
 }
 .btn
 {
@@ -132,7 +132,7 @@ ul
     display: flex;
     justify-content: center;
     align-items: center;
-    background: aqua;
+    background: #f7f305;
     border-right: 1px solid var(--bg-black-50);
     z-index: 10;
     transition: all 0.3s ease;
@@ -152,8 +152,8 @@ ul
     font-size: 25px;
     font-weight: 600;
     display: block;
-    border-bottom: 1px solid var(--bg-black-50);
-    color: var(--bg-black-900);
+    border-bottom: 1px solid rgb(28, 47, 75);
+    color: rgb(28, 47, 75);
     padding: 5px 15px;
 }
 /* nav-bar */
@@ -461,7 +461,6 @@ ul
 {
     flex: 0 0 60%;
     max-width: 60%;
-    background: green;
 }
 .about .work-info.modalClass{
     display: none;
@@ -487,13 +486,26 @@ ul
 .about .work-info .work-item
 {
     flex: 0 0 35%;
-    background: yellow;
+}
+.about .work-info .work-item .duration p
+{
+    color: var(--text-black-700);
+    font-size: 18px;
+}
+.about .work-info .work-item .place h4
+{
+    font-size: 20px;
 }
 .about .work-info .work-title
 {
     flex: 0 0 50%;
     align-items: center;
-    background: blue;
+}
+.about .work-info .work-title p
+{
+    color: var(--text-black-700);
+    font-size: 22px;
+    font-weight: bold;
 }
 .about .work-info .work-description
 {
@@ -501,7 +513,10 @@ ul
     text-align: center;
     position: relative;
     cursor: pointer;
-    background: #f2f2fc;
+}
+.about .work-info .work-description i
+{
+    font-size: 24px;
 }
 .about .work-info .work-description:hover
 {
@@ -599,6 +614,8 @@ ul
     flex: 0, 0, 100%;
     max-width: 100%;
     margin-bottom: 30px;
+    font-size: 20px;
+    color: var(--text-black-700);
 }
 .service .service-item
 {
@@ -682,7 +699,6 @@ ul
 /* portfolio */
 .project
 {
-    background: black;
     padding: 35px;
     justify-content: center;
     align-items: center;
@@ -836,7 +852,6 @@ ul
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aqua;
 }
 .testimonials-slider
 {
@@ -886,7 +901,7 @@ ul
 .user-text p
 {
     display: block;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300px;
     animation: userText 0.4s linear 0.6s backwards;
 }
@@ -952,6 +967,11 @@ ul
     flex: 0, 0, 100%;
     max-width: 100%;
     margin-bottom: 30px;
+}
+.blogs .blogs-text p
+{
+    color: var(--text-black-700);
+    font-size: 20px;
 }
 .blogs .blogs-item
 {
@@ -1019,7 +1039,6 @@ ul
 {
     flex: 0 0 60%;
     max-width: 60%;
-    background-color: blue;
 }
 .contact .contact-content .input-container
 {
@@ -1044,7 +1063,7 @@ ul
     left: 15px;
     top: 0;
     padding: 10px;
-    color: var(--bg-black-100);
+    color: var(--text-black-700);
     cursor: text;
     transition: 0.3s;
 }
