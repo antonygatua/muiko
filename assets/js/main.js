@@ -14,9 +14,9 @@ function closeMenu(){
 }
 /* Typing animation */
 var typed = new Typed(".typing", {
-  strings:["", "Data Scientist", "", "Data Analyst", ""],
+  strings:["", "Data Scientist", "", "Data Analyst", "", "Machine Learning Engineer"],
   typeSpeed: 80,
-  backSpeed: 40,
+  backSpeed: 60,
   loop:true
 })
 // work description
