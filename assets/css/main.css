@@ -38,7 +38,6 @@ ul
 {
     min-height: 100vh;
     display: block;
-    background: var(--bg-black-900);
     opacity: 1;
     left: 75px;
     top: 75px;
