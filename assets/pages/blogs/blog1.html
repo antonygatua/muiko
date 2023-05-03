@@ -11,16 +11,6 @@
   <body>
     <!-- Start Main container -->
     <div class="main-container">
-      <!-- Side Bar Socials Start -->
-      <div class="side-bar">
-        <ul class="side-bar-socials">
-            <li><a href="https://www.linkedin.com/in/antonny-muiko-1b5aaa162/"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://github.com/antonygatua"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://stackoverflow.com/users/11718375/antonny-muiko"><i class="fa-brands fa-stack-overflow"></i></a></li>
-            <li><a href="https://twitter.com/antonny_muiko"><i class="fa-brands fa-twitter"></i></a></li>
-        </ul>
-      </div>
-      <!-- Side Bar Socials End -->
       <!-- Top Bar Start -->
       <div class="nav-bar">
         <div class="menu">
@@ -62,83 +52,169 @@
         </ul>
       </div>
       <!--menu links end-->
-      <section class="section">
-        <div class="container">
-          <div class="blog-content padd-15">
-            <div></div>
-            <h2>Data Cleaning</h2>
-            <p>What is data cleaning and how do you do it properly? When using data, most people tend to agree that the insights generated and analysis tend to only be as good as the data that is being used. Fundamentally, garbage data in translates to garbage insights out, which should be your mantra if you are serious about making data-driven decisions and building accurate machine learning models. Quality data beats even the most sophisticated algorithms making data cleaning one of the most important processes involved in data analysis. Without cleaning your data, your models will deliver misleading results that can seriously be frustrating and misleading when it comes to decision-making. In the business world, incorrect data can be costly and you definitely don’t want that.</p>
-            <div class="blog-img">
-              <img src="../../images/blog_images/data_cleaning.jpg" alt="whuuups">
+      <div class="blog-container">
+        <!--Blog Content Section Start-->
+        <section class="section">
+          <div class="container padd-15">
+            <div class="blog-content padd-15">
+              <div class="blog-heading">
+                <h2>Data Cleaning</h2>
+              </div>
+              <p>
+                What is data cleaning and how do you do it properly? When using data, most people tend to agree that the insights generated and analysis tend to only be as good as the data that is being used. Fundamentally, garbage data in translates to garbage insights out, which should be your mantra if you are serious about making data-driven decisions and building accurate machine learning models. Quality data beats even the most sophisticated algorithms making data cleaning one of the most important processes involved in data analysis. Without cleaning your data, your models will deliver misleading results that can seriously be frustrating and misleading when it comes to decision-making. In the business world, incorrect data can be costly and you definitely don’t want that.
+              </p>
+              <div class="blog-img">
+                <img src="/../images/blog_images/data_cleaning.jpg" alt="uuupppsss, will fix that!">
+              </div>
+              <h3>What is Data Cleaning?</h3>
+              <p>
+                Data cleaning refers to the process of identifying and correcting or removing incorrect, incomplete, incorrectly formatted, corrupted, duplicate or irrelevant data within the provided data. The data cleaning process modifies data to ensure that its free of irrelevances and incorrect information. When users enter records, during transmission and storage, or when combining different data sources among other several data processes provides the perfect opportunity for data to be duplicated, mislabeled, incorrect, irrelevant or inconsistent. By rushing or eliminating the data cleaning step, you run the risk of including false, misleading or duplicated records in the final dataset making the insights generated and the algorithms built unreliable. With effective cleaning, the data should be consistent and with substantially minimized errors that could be problematic during later use.
+              </p>
+              <p>
+                Although many times data cleaning can be pretty boring and tiresome, it’s important to understand that it’s very valuable in improving the efficiency of any data analysis process or the accuracy of any machine learning algorithm. It generally helps to improve the data quality and hence has a huge impact on the reliability of the final data. A big chunk of time is spent in this phase but with absolute certainty, that is time well spent for a greater cause.
+              </p>
+              <p>
+                Apparently, there is no one outright and perfect way to stipulate the exact steps involved in the data cleaning phase because the processes will differ depending on the dataset. It is therefore critical to establish a template to be used during this phase which will act as a guide to ensure that the processes are done thoroughly and correctly every time.
+              </p>
+              <h3>Is Data Cleaning the same as Data Transformation?</h3>
+              <p>
+                Candidly, the answer is no. Data cleaning is the process of identifying and correcting or deleting irrelevant and incorrect data points. It is the process that removes unwanted data that doesn’t belong to the dataset or correcting data points in the dataset. Data transformation, on the other hand, is the process of converting data from one format or structure into another to ease processing. In data processing, data goes through a data cleaning phase before any transformation can occur. The data is then transformed through stages like normalization and standardization.
+              </p>
+              <h3>What are the different types of data issues?</h3>
+              <p>
+                Various types of data issues may occur in an organization when collecting data, combining multiple datasets, receiving data from clients, customers or other departments and inputting data. Some example data issues include;
+              </p>
+              <ul>
+                <li> <i class="fa-solid fa-star-of-life"></i> Incomplete data</li>
+                <p>
+                  This is data with missing fields and rows that occurs when no data value is stored for an attribute in an observation. Missing data are a common occurrence and can have a significant effect on the insights that can be drawn from the data.
+                </p>
+                <li><i class="fa-solid fa-star-of-life"></i> Duplicated entries</li>
+                <p>
+                  Duplicate data is any entry that inadvertently shares data with another entry in a Database, ie a complete carbon copy. Duplicate entries in a dataset are also a common occurrence.
+                </p>
+                <li><i class="fa-solid fa-star-of-life"></i> Invalid Data</li>
+                <p>
+                  Data attributes are not conforming with the logical dataset mapping. This includes wrong data types and wrong data formats which in turn interferes with the analysis process. Remember the computer doesn’t understand 95% as a numerical representation but instead as a string.
+                </p>
+                <li><i class="fa-solid fa-star-of-life"></i> Conflicting data</li>
+                <p>
+                  Occurs when there are same records with different attributes ie there are deviations between data intended to capture the same real-world entity and can mislead any analysis done on it.
+                </p>
+              </ul>
+              <h3>How to Clean Data</h3>
+              <p>
+                According to research, data cleaning is often the least enjoyable part and time-consuming. Automation of the cleaning process usually requires extensive experience in dealing with “dirty” data. While the techniques used for data cleaning may vary according to the type of data, qualitative and quantitative data, and depending on the research methodology or study, understanding the what and why behind data cleaning is one thing, going ahead to implement it is another and the following basic steps can form a solid framework for this phase:
+              </p>
+              <ul>
+                <li><i class="fa-solid fa-star-of-life"></i> Removal of duplicate and unwanted observations</li>
+                <p>
+                  Data that is processed in the form of rows and columns often has duplicates across both the columns and rows that need to be filtered out. Duplicate records will happen most often during data collection. When merging datasets, receiving data from different customers, clients or departments or scrapping data among other data processes provides the opportunity to create duplicate data. It is there important to ensure that you are working with unique data entries by keeping one version of the duplicates and removing the rest.
+                </p>
+                <p>
+                  Unwanted observations are irrelevant data records that don’t actually fit the specific problem you are trying to analyze or solve. For example, if analyzing data about customer transactions in a bank, their names wouldn’t be important given that they already have unique identification. Removing these irrelevant records creates a more manageable dataset.</p>
+                <li><i class="fa-solid fa-star-of-life"></i> Handle Missing Data</li>
+                <p>
+                  You simply can’t ignore missing data as you may end up with missing records in your data due to errors during collections or non-response bias from the respondents. In any poorly designed data collection procedure, unfortunately, missing records is inevitable. Also when merging data where one has more columns than the other could also result in missing records. Its needs to be identified and dealt with as soon as possible. While identifying these missing records proves to be easy, how to handle them often requires careful consideration as random fills or removal can lead to unforeseen results.
+                </p>
+                <p>
+                  There are a couple of ways to deal with missing data but it is important to note that neither is the optimal way of doing so. Some of the options that can be considered include;
+                </p>
+                <ol>
+                  <li>Dropping</li>
+                  <p>
+                    Often, the first option is to drop the rows that have missing values. This is solemnly dependent on the number of rows as it is not worth the hassle of filling up a single or very few entries in a very large dataset. When multiple rows have missing values for the same column, then the column can be dropped depending on the importance of the column to the study, but why should an important column in a study have multiple rows missing? Removing rows and columns will result in loss of information and it’s therefore important that you be mindful before removing them.
+                  </p>
+                  <li>Replacing</li>
+                  <p>
+                    Under particular circumstances, you can input missing values based on other observations or by using calculated guesses. This requires complete scrutiny as it provides the opportunity to lose the integrity of the data as you are operating on assumptions and not actual records.
+                  </p>
+                </ol>
+                <p>
+                  It’s important to add data validation in your survey to allow you to control what data is being submitted and ensure there is consistency.
+                </p>
+                <li><i class="fa-solid fa-star-of-life"></i> Fix Data Structure</li>
+                <p>
+                  Upon removing the missing values and the irrelevant observations, it is important to ensure that the wanted observations are well structured. Structural errors include strange naming conventions, typos, incorrect capitalization, wrong data types and inconsistencies. This is very common in data collected through surveys and questionnaires mainly due to the fact that a huge demographic is represented through it. This can result in mislabeled categories or classes as it’s common among categorical data, such as ‘Not Applicable’ and ‘N/A’ being classified into different categories but they should be analyzed as the same. It is therefore important to ensure that there is consistency in the data before it is analyzed.
+                </p>
+                <li><i class="fa-solid fa-star-of-life"></i> Filter unwanted outliers</li>
+                <p>
+                  Outliers are extreme data points that vary immensely from the other points. They are the hardest to detect among other data inaccuracies within the data in the sense that they are often of the same type as the other observations. Therefore, it is important to understand that just because they exist, doesn’t mean they are incorrect and as such, there should be a valid reason to remove these data points.
+                </p>
+                <p>
+                  Upon identifying outliers in the data and it proves to be irrelevant for the analysis or it was a mistake, then the outliers can be removed.
+                </p>
+                <li><i class="fa-solid fa-star-of-life"></i> Validate Data Accuracy</li>
+                <p>
+                  At this phase of data cleaning, the data is free of incorrect and inconsistent information, but is it ready for analysis? The data needs to be cross-checked to ensure that the data which is being processed is as accurate as possible and most importantly relevant to the study. Based on the requirements of the research or study, do you have the right data? It is therefore important that you ensure the data actually does make sense and follows the appropriate rules of its field from which you can identify trends and helps you to formulate your next theory. There are many definitions of quality data, but data is normally considered high quality when good enough for its intended purpose upon which the correct insights can be derived to aid in decision making, planning and operations within an organization. Determining data quality requires careful examination of its characteristics and subsequently weighing those characteristics to what is of importance to an organization. Data typically has five characteristics that can be used to determine its quality;
+                </p>
+                <ol>
+                  <li>Validity</li>
+                  <p>
+                    The degree to which the data conforms to defined business rules or constraints. Data collection often includes a huge demographic represented through it in various forms. Modern technology is used to design data-collection systems and hence finds it easy to ensure validity as they can control the data that is being entered into the digital documents and forms. Inappropriate data collection methods such as the use of spreadsheets, find it very hard to limit what a user chooses to enter into a cell where cell validation is not used. The typical constraints applied to ensure validity include; data-type constraints, range constraints, foreign-key constraints, cross-field constraints, unique constraints, and mandatory constraints.
+                  </p>
+                  <li>Accuracy</li>
+                  <p>
+                    The degree to which the data accurately reflects an event or an observation in the real world. The data values stored should be close enough or the actual true values as the data is required to be both feasible and precise. It is important to understand that it’s almost impossible to guarantee perfectly accurate data, however, the data should contain near-accurate records.
+                  </p>
+                  <li>Consistency</li>
+                  <p>
+                    This is how the data responds to cross-checks with the other fields. It is important to ensure that your data is consistent within the same dataset and across multiple similar datasets. Two or more data entries should not contradict each other.
+                  </p>
+                  <li>Completeness</li>
+                  <p>
+                    The degree to which all required data is known. The data available should have all the entries where possible without any missing. Every data point that was supposed to be collected or keyed has successfully been done.
+                  </p>
+                  <li>Uniformity</li>
+                  <p>
+                    The degree to which the respective data fields have been specified using the same unit of measurements. All the measurements in a particular column should be uniform, ie all the heights should be in meters or centimeters and not some in meters others in centimeters.
+                  </p>
+                </ol>
+              </ul>
+              <h3>Importance of Data Cleaning</h3>
+              <p>
+                For you to generate accurate information from your data and to make informed decisions, it is important to ensure that your data is thoroughly cleaned. In the modern world, better data impacts everything. Some of the benefits of data cleaning include;
+              </p>
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Allows for better decision-making.</li>
+                <li><i class="fa-solid fa-check"></i> Improves productivity in the organization.</li>
+                <li><i class="fa-solid fa-check"></i> Results in better data organization.</li>
+                <li><i class="fa-solid fa-check"></i> Reduces the errors in daily operations and activities.</li>
+                <li><i class="fa-solid fa-check"></i> Minimize compliance risks.</li>
+                <li><i class="fa-solid fa-check"></i> Monitoring and reporting errors allow the organization to anticipate and fix future errors.</li>
+                <li><i class="fa-solid fa-check"></i> Boosts and protects the organization’s reputation.</li>
+              </ul>
             </div>
-            <h3>What is Data Cleaning?</h3>
-            <p>Data cleaning refers to the process of identifying and correcting or removing incorrect, incomplete, incorrectly formatted, corrupted, duplicate or irrelevant data within the provided data. The data cleaning process modifies data to ensure that its free of irrelevances and incorrect information. When users enter records, during transmission and storage, or when combining different data sources among other several data processes provides the perfect opportunity for data to be duplicated, mislabeled, incorrect, irrelevant or inconsistent. By rushing or eliminating the data cleaning step, you run the risk of including false, misleading or duplicated records in the final dataset making the insights generated and the algorithms built unreliable. With effective cleaning, the data should be consistent and with substantially minimized errors that could be problematic during later use.</p>
-            <p>Although many times data cleaning can be pretty boring and tiresome, it’s important to understand that it’s very valuable in improving the efficiency of any data analysis process or the accuracy of any machine learning algorithm. It generally helps to improve the data quality and hence has a huge impact on the reliability of the final data. A big chunk of time is spent in this phase but with absolute certainty, that is time well spent for a greater cause.</p>
-            <p>Apparently, there is no one outright and perfect way to stipulate the exact steps involved in the data cleaning phase because the processes will differ depending on the dataset. It is therefore critical to establish a template to be used during this phase which will act as a guide to ensure that the processes are done thoroughly and correctly every time.</p>
-            <h3>Is Data Cleaning the same as Data Transformation?</h3>
-            <p>Candidly, the answer is no. Data cleaning is the process of identifying and correcting or deleting irrelevant and incorrect data points. It is the process that removes unwanted data that doesn’t belong to the dataset or correcting data points in the dataset. Data transformation, on the other hand, is the process of converting data from one format or structure into another to ease processing. In data processing, data goes through a data cleaning phase before any transformation can occur. The data is then transformed through stages like normalization and standardization.</p>
-            <h3>What are the different types of data issues?</h3>
-            <p>Various types of data issues may occur in an organization when collecting data, combining multiple datasets, receiving data from clients, customers or other departments and inputting data. Some example data issues include;</p>
-            <ul>
-              <li>Incomplete data</li>
-              <p>This is data with missing fields and rows that occurs when no data value is stored for an attribute in an observation. Missing data are a common occurrence and can have a significant effect on the insights that can be drawn from the data.</p>
-              <li>Duplicated entries</li>
-              <p>Duplicate data is any entry that inadvertently shares data with another entry in a Database, ie a complete carbon copy. Duplicate entries in a dataset are also a common occurrence.</p>
-              <li>Invalid Data</li>
-              <p>Data attributes are not conforming with the logical dataset mapping. This includes wrong data types and wrong data formats which in turn interferes with the analysis process. Remember the computer doesn’t understand 95% as a numerical representation but instead as a string.</p>
-              <li>Conflicting data</li>
-              <p>Occurs when there are same records with different attributes ie there are deviations between data intended to capture the same real-world entity and can mislead any analysis done on it.</p>
-            </ul>
-            <h3>How to Clean Data</h3>
-            <p>According to research, data cleaning is often the least enjoyable part and time-consuming. Automation of the cleaning process usually requires extensive experience in dealing with “dirty” data. While the techniques used for data cleaning may vary according to the type of data, qualitative and quantitative data, and depending on the research methodology or study, understanding the what and why behind data cleaning is one thing, going ahead to implement it is another and the following basic steps can form a solid framework for this phase:</p>
-            <ul>
-              <li>Removal of duplicate and unwanted observations</li>
-              <p>Data that is processed in the form of rows and columns often has duplicates across both the columns and rows that need to be filtered out. Duplicate records will happen most often during data collection. When merging datasets, receiving data from different customers, clients or departments or scrapping data among other data processes provides the opportunity to create duplicate data. It is there important to ensure that you are working with unique data entries by keeping one version of the duplicates and removing the rest.</p>
-              <p>Unwanted observations are irrelevant data records that don’t actually fit the specific problem you are trying to analyze or solve. For example, if analyzing data about customer transactions in a bank, their names wouldn’t be important given that they already have unique identification. Removing these irrelevant records creates a more manageable dataset.</p>
-              <li>Handle Missing Data</li>
-              <p>You simply can’t ignore missing data as you may end up with missing records in your data due to errors during collections or non-response bias from the respondents. In any poorly designed data collection procedure, unfortunately, missing records is inevitable. Also when merging data where one has more columns than the other could also result in missing records. Its needs to be identified and dealt with as soon as possible. While identifying these missing records proves to be easy, how to handle them often requires careful consideration as random fills or removal can lead to unforeseen results.</p>
-              <p>There are a couple of ways to deal with missing data but it is important to note that neither is the optimal way of doing so. Some of the options that can be considered include;</p>
-              <ol>
-                <li>Dropping</li>
-                <p>Often, the first option is to drop the rows that have missing values. This is solemnly dependent on the number of rows as it is not worth the hassle of filling up a single or very few entries in a very large dataset. When multiple rows have missing values for the same column, then the column can be dropped depending on the importance of the column to the study, but why should an important column in a study have multiple rows missing? Removing rows and columns will result in loss of information and it’s therefore important that you be mindful before removing them.</p>
-                <li>Replacing</li>
-                <p>Under particular circumstances, you can input missing values based on other observations or by using calculated guesses. This requires complete scrutiny as it provides the opportunity to lose the integrity of the data as you are operating on assumptions and not actual records.</p>
-              </ol>
-              <p>It’s important to add data validation in your survey to allow you to control what data is being submitted and ensure there is consistency.</p>
-              <li>Fix Data Structure</li>
-              <p>Upon removing the missing values and the irrelevant observations, it is important to ensure that the wanted observations are well structured. Structural errors include strange naming conventions, typos, incorrect capitalization, wrong data types and inconsistencies. This is very common in data collected through surveys and questionnaires mainly due to the fact that a huge demographic is represented through it. This can result in mislabeled categories or classes as it’s common among categorical data, such as ‘Not Applicable’ and ‘N/A’ being classified into different categories but they should be analyzed as the same. It is therefore important to ensure that there is consistency in the data before it is analyzed.</p>
-              <li>Filter unwanted outliers</li>
-              <p>Outliers are extreme data points that vary immensely from the other points. They are the hardest to detect among other data inaccuracies within the data in the sense that they are often of the same type as the other observations. Therefore, it is important to understand that just because they exist, doesn’t mean they are incorrect and as such, there should be a valid reason to remove these data points.</p>
-              <p>Upon identifying outliers in the data and it proves to be irrelevant for the analysis or it was a mistake, then the outliers can be removed.</p>
-              <li>Validate Data Accuracy</li>
-              <p>At this phase of data cleaning, the data is free of incorrect and inconsistent information, but is it ready for analysis? The data needs to be cross-checked to ensure that the data which is being processed is as accurate as possible and most importantly relevant to the study. Based on the requirements of the research or study, do you have the right data? It is therefore important that you ensure the data actually does make sense and follows the appropriate rules of its field from which you can identify trends and helps you to formulate your next theory. There are many definitions of quality data, but data is normally considered high quality when good enough for its intended purpose upon which the correct insights can be derived to aid in decision making, planning and operations within an organization. Determining data quality requires careful examination of its characteristics and subsequently weighing those characteristics to what is of importance to an organization. Data typically has five characteristics that can be used to determine its quality;</p>
-              <ol>
-                <li>Validity</li>
-                <p>The degree to which the data conforms to defined business rules or constraints. Data collection often includes a huge demographic represented through it in various forms. Modern technology is used to design data-collection systems and hence finds it easy to ensure validity as they can control the data that is being entered into the digital documents and forms. Inappropriate data collection methods such as the use of spreadsheets, find it very hard to limit what a user chooses to enter into a cell where cell validation is not used. The typical constraints applied to ensure validity include; data-type constraints, range constraints, foreign-key constraints, cross-field constraints, unique constraints, and mandatory constraints.</p>
-                <li>Accuracy</li>
-                <p>The degree to which the data accurately reflects an event or an observation in the real world. The data values stored should be close enough or the actual true values as the data is required to be both feasible and precise. It is important to understand that it’s almost impossible to guarantee perfectly accurate data, however, the data should contain near-accurate records.</p>
-                <li>Consistency</li>
-                <p>This is how the data responds to cross-checks with the other fields. It is important to ensure that your data is consistent within the same dataset and across multiple similar datasets. Two or more data entries should not contradict each other.</p>
-                <li>Completeness</li>
-                <p>The degree to which all required data is known. The data available should have all the entries where possible without any missing. Every data point that was supposed to be collected or keyed has successfully been done.</p>
-                <li>Uniformity</li>
-                <p>The degree to which the respective data fields have been specified using the same unit of measurements. All the measurements in a particular column should be uniform, ie all the heights should be in meters or centimeters and not some in meters others in centimeters.</p>
-              </ol>
-            </ul>
-            <h3>Importance of Data Cleaning</h3>
-            <p>For you to generate accurate information from your data and to make informed decisions, it is important to ensure that your data is thoroughly cleaned. In the modern world, better data impacts everything. Some of the benefits of data cleaning include;</p>
-            <ul>
-              <li>Allows for better decision-making.</li>
-              <li>Improves productivity in the organization.</li>
-              <li>Results in better data organization.</li>
-              <li>Reduces the errors in daily operations and activities.</li>
-              <li>Minimize compliance risks.</li>
-              <li>Monitoring and reporting errors allow the organization to anticipate and fix future errors.</li>
-              <li>Boosts and protects the organization’s reputation.</li>
-            </ul>
           </div>
+        </section>
+        <!--Side bar Starts -->
+        <div class="other-blogs">
+          <div class="other-blogs-container padd-15">
+            <div class="other-blogs-heading">
+              <h2 class="padd-15"> Similar Reads</h2>
+            </div>
+            <div class="similar-reads">
+              <div class="similar-read-item">
+                <div class="similar-title">
+                  <p>Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="similar-img"></div>
+              </div>
+            </div>
+            <div class="similar-reads">
+              <div class="similar-read-item">
+                <div class="similar-title">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="similar-img"></div>
+              </div>
+            </div>  
+          </div>   
         </div>
-      </section>
+        <!-- Side bar ends -->
+      <!--Blog Content Section End-->
+      </div>
+      <footer></footer>
     </div>
     <!-- End Main Container -->
     <script src="../../js/main.js"></script>
