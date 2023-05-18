@@ -14,7 +14,7 @@ function closeMenu(){
 }
 /* Typing animation */
 var typed = new Typed(".typing", {
-  strings:["", "Data Scientist", "", "Data Analyst", "", "Machine Learning Engineer"],
+  strings:["", "Data Scientist", "", "Data Engineer", "", "Machine Learning Engineer", "", "Data Analyst"],
   typeSpeed: 80,
   backSpeed: 60,
   loop:true
@@ -102,4 +102,19 @@ document
       alert("FAILED...", error);
     }
   );
+});
+
+// get all the toggle buttons
+const toggleButtons = document.querySelectorAll('.faq-toggle');
+
+// loop through all the toggle buttons and add a click event listener to each
+toggleButtons.forEach(function(button) {
+  button.addEventListener('click', function() {
+    // get the corresponding answer element
+    const answer = this.parentElement.parentElement.querySelector('.faq-answer');
+    // toggle the active class on the answer element
+    answer.classList.toggle('active');
+    // toggle the active class on the toggle button element
+    this.classList.toggle('active');
+  });
 });
