@@ -648,7 +648,7 @@ ul
     text-align: center;
     transition: all 0.3s ease;
 } 
-.service .service-item .service-item-inner .icon .fa 
+.service .service-item .service-item-inner .icon .fa-solid
 {
     font-size: 40px;
     line-height: 60px;
@@ -659,7 +659,7 @@ ul
 {
     background: var(--lg-border-color);
 }
-.service .service-item .service-item-inner:hover .icon .fa
+.service .service-item .service-item-inner:hover .icon .fa-solid
 {
     font-size: 25px;
     color: #ffffff;
