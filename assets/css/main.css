@@ -1031,87 +1031,6 @@ ul
     background: var(--btn-color);
     border: 2px solid var(--lg-border-color);
 }
-/* Contact */
-.contact
-{
-    min-height: 100vh;
-    display: flex;
-    color: var(--text-black-900);
-    top: 0;
-}
-.contact .contact-content 
-{
-    flex: 0 0 60%;
-    max-width: 60%;
-}
-.contact .contact-content .input-container
-{
-    margin-bottom: 30px;
-    position: relative;
-}
-.contact .contact-content input, textarea
-{
-    width: 100%;
-    padding: 10px;
-    outline: 0;
-    border: 2px solid var(--lg-border-color);
-    border-radius: 8px;
-    color: var(--bg-black-100);
-    background: transparent;
-    font-size: 16px;
-}
-.contact .contact-content label
-{
-    height: 100%;
-    position: absolute;
-    left: 15px;
-    top: 0;
-    padding: 10px;
-    color: var(--text-black-700);
-    cursor: text;
-    transition: 0.3s;
-}
-.contact .contact-content input:focus~label,
-.contact .contact-content input:valid~label,
-.contact .contact-content textarea:focus~label,
-.contact .contact-content textarea:valid~label
-{
-    top: -35px;
-    font-size: 14px;
-}
-.contact .contact-content button
-{
-    padding: 10px 5px;
-    border-radius: 8px;
-    border: none;
-    background-color: var(--lg-border-color);
-    color: var(--btn-color);
-    cursor: pointer;
-    white-space: nowrap;
-    transition: all 0.3s ease;
-}
-.contact .contact-content button:hover
-{
-    transform: scale(1.15);
-    color: var(--lg-border-color);
-    background: var(--btn-color);
-}
-.contact .contact-content .error
-{
-    color: red;
-}
-.contact .contact-content .error-border
-{
-    border-bottom: 1px solid red;
-}
-.contact .contact-img
-{
-    flex: 0 0 40%;
-    max-width: 40%;
-    text-align: center;
-    position: relative;
-    background-color: yellow;
-}
 
 .faq-section {
     background-color: var(--background-main);
@@ -1222,6 +1141,88 @@ ul
     max-height: 200px;
     transition: max-height 0.5s ease-in;
     display: inline;
+}
+
+/* Contact */
+.contact
+{
+    min-height: 100vh;
+    display: flex;
+    color: var(--text-black-900);
+    top: 0;
+}
+.contact .contact-content 
+{
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+.contact .contact-content .input-container
+{
+    margin-bottom: 30px;
+    position: relative;
+}
+.contact .contact-content input, textarea
+{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 2px solid var(--lg-border-color);
+    border-radius: 8px;
+    color: var(--bg-black-100);
+    background: transparent;
+    font-size: 16px;
+}
+.contact .contact-content label
+{
+    height: 100%;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    padding: 10px;
+    color: var(--text-black-700);
+    cursor: text;
+    transition: 0.3s;
+}
+.contact .contact-content input:focus~label,
+.contact .contact-content input:valid~label,
+.contact .contact-content textarea:focus~label,
+.contact .contact-content textarea:valid~label
+{
+    top: -35px;
+    font-size: 14px;
+}
+.contact .contact-content button
+{
+    padding: 10px 5px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--lg-border-color);
+    color: var(--btn-color);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+.contact .contact-content button:hover
+{
+    transform: scale(1.15);
+    color: var(--lg-border-color);
+    background: var(--btn-color);
+}
+.contact .contact-content .error
+{
+    color: red;
+}
+.contact .contact-content .error-border
+{
+    border-bottom: 1px solid red;
+}
+.contact .contact-img
+{
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+    background-color: yellow;
 }
 
 footer{

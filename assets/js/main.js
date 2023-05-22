@@ -104,6 +104,28 @@ document
   );
 });
 
+// listen to the form submission
+document
+.getElementById("form")
+.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const serviceID = "service_t5qipk6";
+  const templateID = "template_csh0744";
+
+  // send the email here
+  emailjs.sendForm(serviceID, templateID, this).then(
+    (response) => {
+      console.log("SUCCESS!", response.status, response.text);
+      alert("SUCCESS!");
+    },
+    (error) => {
+      console.log("FAILED...", error);
+      alert("FAILED...", error);
+    }
+  );
+});
+
 // get all the toggle buttons
 const toggleButtons = document.querySelectorAll('.faq-toggle');
 
