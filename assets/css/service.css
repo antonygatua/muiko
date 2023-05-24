@@ -498,7 +498,14 @@ ul
 }
 .contact-img {
     flex-basis: 40%;
-    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-img img {
+    width: 80%;
+    height: 600px;
+    object-fit: contain;
 }
 .form-contact {
     flex-basis: 60%;
