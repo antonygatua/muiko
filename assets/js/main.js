@@ -104,28 +104,6 @@ document
   );
 });
 
-// listen to the form submission
-document
-.getElementById("form")
-.addEventListener("submit", function (event) {
-  event.preventDefault();
-
-  const serviceID = "service_t5qipk6";
-  const templateID = "template_csh0744";
-
-  // send the email here
-  emailjs.sendForm(serviceID, templateID, this).then(
-    (response) => {
-      console.log("SUCCESS!", response.status, response.text);
-      alert("SUCCESS!");
-    },
-    (error) => {
-      console.log("FAILED...", error);
-      alert("FAILED...", error);
-    }
-  );
-});
-
 // get all the toggle buttons
 const toggleButtons = document.querySelectorAll('.faq-toggle');
 
@@ -140,5 +118,28 @@ toggleButtons.forEach(function(button) {
     this.classList.toggle('active');
   });
 });
+document.addEventListener('DOMContentLoaded', function() {
+  var buttons = document.querySelectorAll('.more-btn');
 
+  buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      var target = this.dataset.target;
+      var description = document.getElementById(target);
+      if (description) {
+        description.classList.add('active');
+      }
+    });
+  });
+
+  var closeButtons = document.querySelectorAll('.close-popup');
+
+  closeButtons.forEach(function(closeButton) {
+    closeButton.addEventListener('click', function() {
+      var popup = this.closest('.pop-up');
+      if (popup) {
+        popup.classList.remove('active');
+      }
+    });
+  });
+});
 
