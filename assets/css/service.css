@@ -256,6 +256,7 @@ ul
 }
 
 .services {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -312,19 +313,20 @@ ul
 
 
 .service-description {
-   position: fixed;
+   position: absolute;
    top: 50%; left: 50%;
    transform: translate(-50%, -50%);
    display: flex;
    align-items: center;
    justify-content: center;
+   width: 100%;
 }
 
 .service-description .preview{
     display: none;
     background: var(--background-sub);
     border-radius: 15px;
-    width: 100%;
+    width: 80%;
     max-height: 1000px;
     overflow: auto;
     position: relative;
@@ -598,4 +600,76 @@ footer{
 
 .social-links li a {
     color: var(--text-black-900);
+}
+
+@media (max-width: 900px) {
+    .services-container .sub-services{
+        grid-template-columns: repeat(2,minmax(50%, 1fr));
+    }
+
+}
+
+@media (max-width: 750px) {
+    .proj-icon {
+        display: none; 
+    }
+
+    .proj-content {
+        flex-basis: 100%; 
+    }
+    .contact-info {
+        flex-direction: column; 
+    }
+
+    .contact-img {
+        flex-basis: auto; 
+        margin-bottom: 20px; 
+    }
+    .section-title h2 {
+        font-size: 26px;
+    }
+    .overview-content p {
+        font-size: 17px;
+    }
+    .services-container .description p {
+        font-size: 17px;
+    }
+    .sub-services .service-item .service-item-inner h4{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .sub-services .service-item .service-item-inner p {
+        font-size: 14px;
+    }
+    .section-description p {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+    .proj-content .proj-title h2 {
+        font-size: 20px;
+    }
+    .proj-content .proj-description p {
+        font-size: 17px;
+    }
+    .contact-section p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 570px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .rights-reserved{
+        font-size: 18px;
+    }
+    .social-links li {
+        margin-right: 10px;
+        font-size: 25px;
+    }
+}
+@media (max-width: 450px) {
+    .services-container .sub-services{
+        grid-template-columns: repeat(1,minmax(50%, 1fr));
+    }
 }
