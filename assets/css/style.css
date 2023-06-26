@@ -304,3 +304,18 @@ ul {
 .container.active .main:hover {
   transform: perspective(1300px) rotateY(20deg) translateZ(340px) scale(0.5);
 }
+@media (max-width: 650px) {
+  .container.active .bar,
+  .container.active .bar:before,
+  .container.active .bar:after,
+  .container.active .main,
+  .container.active .links a,
+  .container.active .shadow.one,
+  .container.active .shadow.two,
+  .container.active .main:hover + .shadow.one,
+  .container.active .main:hover {
+    /* Disable animations and transformations for smaller screens */
+    animation: none !important;
+    transform: none !important;
+  }
+}
